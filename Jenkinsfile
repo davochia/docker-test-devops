@@ -30,7 +30,7 @@ node {
 
     stage('Run Docker container on Jenkins Agent') {
 
-       sh "docker pull wisekingdavid/casecoursework"
+       sh "docker pull wisekingdavid/casecourseworktest"
 
     }
 
