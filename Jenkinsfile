@@ -32,12 +32,10 @@ node {
 
        sh "docker pull wisekingdavid/casecoursework"
 
-       //sh "docker build -t wisekingdavid/casecourseworktest:latest ."
-       sh "docker run -d -p 8088:8081 wisekingdavid/casecourseworktest"
     }
 
   stage('Run Docker container on remote hosts') {
-    sh "docker run -dit -p 8088:8081 wisekingdavid/casecourseworktest"
+    sh "docker run -d -p 8088:8088 wisekingdavid/casecourseworktest:latest"
   }
 
 }
